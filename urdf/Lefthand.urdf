@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Lefthand">
+  <link
+    name="Base">
+    <inertial>
+      <origin
+        xyz="0.0036215 -0.0021518 0.066132"
+        rpy="0 0 0" />
+      <mass
+        value="0.084057" />
+      <inertia
+        ixx="8.4589E-05"
+        ixy="2.7311E-07"
+        ixz="-3.5344E-06"
+        iyy="5.0076E-05"
+        iyz="-2.0882E-06"
+        izz="4.5081E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_thumb_1_roll">
+    <inertial>
+      <origin
+        xyz="0.011014 0.00037884 0.0065619"
+        rpy="0 0 0" />
+      <mass
+        value="0.024514" />
+      <inertia
+        ixx="3.6201E-06"
+        ixy="-1.3889E-08"
+        ixz="7.2521E-07"
+        iyy="4.9359E-06"
+        iyz="4.1496E-08"
+        izz="2.9566E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_thumb_1_roll.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_thumb_1_roll.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_1_roll"
+    type="revolute">
+    <origin
+      xyz="0.030472 -0.035543 0.032711"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Base" />
+    <child
+      link="left_thumb_1_roll" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0.000"
+      upper="2.269"
+      effort="0.500"
+      velocity="1.500" />
+  </joint>
+  <link
+    name="left_thumb_2_pitch">
+    <inertial>
+      <origin
+        xyz="0.01953 -0.0066571 1.3101E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0287" />
+      <inertia
+        ixx="2.5196E-06"
+        ixy="-1.4257E-06"
+        ixz="9.0266E-12"
+        iyy="5.6817E-06"
+        iyz="-1.1074E-11"
+        izz="5.8075E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_thumb_2_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_thumb_2_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_2_pitch"
+    type="revolute">
+    <origin
+      xyz="0.024 0 0.01915"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="left_thumb_1_roll" />
+    <child
+      link="left_thumb_2_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.309"
+      effort="0.500"
+      velocity="1.500" />
+  </joint>
+  <link
+    name="left_thumb_3_pitch">
+    <inertial>
+      <origin
+        xyz="0.022918 -0.01075 -1.3307E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.013259" />
+      <inertia
+        ixx="9.3593E-07"
+        ixy="-6.3056E-07"
+        ixz="-4.8007E-12"
+        iyy="1.7968E-06"
+        iyz="1.9673E-12"
+        izz="2.0568E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_thumb_3_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_thumb_3_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_3_pitch"
+    type="revolute">
+    <origin
+      xyz="0.039467 -0.014365 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_thumb_2_pitch" />
+    <child
+      link="left_thumb_3_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+    <mimic joint="left_thumb_2_pitch" multiplier="1.2666157372039724" offset="0" />
+  </joint>
+  <link
+    name="left_index_finger_2_pitch">
+    <inertial>
+      <origin
+        xyz="0.00042387 -0.020629 1.9542E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.010339" />
+      <inertia
+        ixx="2.2437E-06"
+        ixy="2.7333E-08"
+        ixz="-2.667E-12"
+        iyy="7.1078E-07"
+        iyz="-4.1295E-12"
+        izz="2.0922E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_index_finger_2_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_index_finger_2_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_finger_2_pitch"
+    type="revolute">
+    <origin
+      xyz="-0.0035478 -0.035543 0.117"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="Base" />
+    <child
+      link="left_index_finger_2_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+  </joint>
+  <link
+    name="left_index_finger_3_pitch">
+    <inertial>
+      <origin
+        xyz="-0.0024403 -0.021904 1.1897E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.011204" />
+      <inertia
+        ixx="1.5656E-06"
+        ixy="2.6558E-07"
+        ixz="-1.0233E-11"
+        iyy="5.19E-07"
+        iyz="-9.3121E-12"
+        izz="1.5727E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_index_finger_3_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_index_finger_3_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_finger_3_pitch"
+    type="revolute">
+    <origin
+      xyz="0 -0.042 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_index_finger_2_pitch" />
+    <child
+      link="left_index_finger_3_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+    <mimic joint="left_index_finger_2_pitch" multiplier="1" offset="0" />
+  </joint>
+  <link
+    name="left_middle_finger_2_pitch">
+    <inertial>
+      <origin
+        xyz="0.00042387 -0.020629 1.9812E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.010339" />
+      <inertia
+        ixx="2.2437E-06"
+        ixy="2.7333E-08"
+        ixz="-2.6732E-12"
+        iyy="7.1078E-07"
+        iyz="-4.1276E-12"
+        izz="2.0922E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_middle_finger_2_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_middle_finger_2_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_finger_2_pitch"
+    type="revolute">
+    <origin
+      xyz="-0.0050473 -0.012043 0.119"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="Base" />
+    <child
+      link="left_middle_finger_2_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+  </joint>
+  <link
+    name="left_middle_finger_3_pitch">
+    <inertial>
+      <origin
+        xyz="-0.0024403 -0.021904 1.1896E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.011204" />
+      <inertia
+        ixx="1.5656E-06"
+        ixy="2.6558E-07"
+        ixz="-1.0233E-11"
+        iyy="5.19E-07"
+        iyz="-9.3087E-12"
+        izz="1.5727E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_middle_finger_3_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_middle_finger_3_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_finger_3_pitch"
+    type="revolute">
+    <origin
+      xyz="0 -0.042 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_middle_finger_2_pitch" />
+    <child
+      link="left_middle_finger_3_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+    <mimic joint="left_middle_finger_2_pitch" multiplier="1" offset="0" />
+  </joint>
+  <link
+    name="left_ring_finger_2_pitch">
+    <inertial>
+      <origin
+        xyz="0.00042374 -0.020629 1.7313E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.010339" />
+      <inertia
+        ixx="2.2437E-06"
+        ixy="2.7343E-08"
+        ixz="-2.6064E-12"
+        iyy="7.1078E-07"
+        iyz="-4.2086E-12"
+        izz="2.0922E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_ring_finger_2_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_ring_finger_2_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_finger_2_pitch"
+    type="revolute">
+    <origin
+      xyz="-0.0035462 0.011289 0.11663"
+      rpy="-1.5359 0 3.1415" />
+    <parent
+      link="Base" />
+    <child
+      link="left_ring_finger_2_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+  </joint>
+  <link
+    name="left_ring_finger_3_pitch">
+    <inertial>
+      <origin
+        xyz="-0.0024404 -0.021904 1.1908E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.011204" />
+      <inertia
+        ixx="1.5656E-06"
+        ixy="2.6559E-07"
+        ixz="-1.0182E-11"
+        iyy="5.19E-07"
+        iyz="-9.1324E-12"
+        izz="1.5727E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_ring_finger_3_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_ring_finger_3_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_finger_3_pitch"
+    type="revolute">
+    <origin
+      xyz="0 -0.042 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_ring_finger_2_pitch" />
+    <child
+      link="left_ring_finger_3_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+    <mimic joint="left_ring_finger_2_pitch" multiplier="1" offset="0" />
+  </joint>
+  <link
+    name="left_little_finger_2_pitch">
+    <inertial>
+      <origin
+        xyz="0.00042387 -0.020629 1.726E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.010339" />
+      <inertia
+        ixx="2.2437E-06"
+        ixy="2.7333E-08"
+        ixz="-2.6107E-12"
+        iyy="7.1078E-07"
+        iyz="-4.2189E-12"
+        izz="2.0922E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_little_finger_2_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_little_finger_2_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_finger_2_pitch"
+    type="revolute">
+    <origin
+      xyz="-0.0032932 0.034634 0.11395"
+      rpy="-1.501 0 3.1416" />
+    <parent
+      link="Base" />
+    <child
+      link="left_little_finger_2_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+  </joint>
+  <link
+    name="left_little_finger_3_pitch">
+    <inertial>
+      <origin
+        xyz="-0.0024403 -0.021904 1.1898E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.011204" />
+      <inertia
+        ixx="1.5656E-06"
+        ixy="2.6558E-07"
+        ixz="-1.0172E-11"
+        iyy="5.19E-07"
+        iyz="-9.0785E-12"
+        izz="1.5727E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_little_finger_3_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kepler_dexterous_hand_description/meshes/left/left_little_finger_3_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_finger_3_pitch"
+    type="revolute">
+    <origin
+      xyz="0 -0.042 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_little_finger_2_pitch" />
+    <child
+      link="left_little_finger_3_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0.000"
+      upper="1.658"
+      effort="0.500"
+      velocity="1.500" />
+    <mimic joint="left_little_finger_2_pitch" multiplier="1" offset="0" />
+  </joint>
+</robot>
